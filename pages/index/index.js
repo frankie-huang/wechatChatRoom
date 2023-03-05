@@ -25,6 +25,11 @@ function initData(that) {
     })
     // 初始化输入框的值
     inputValue = '';
+    // 给对话系统设置初始信息
+    config.systemInfo.forEach(text => context.push({
+        role: 'system',
+        content: text
+    }))
     // 展示初始信息，speaker为server表示是非用户消息
     config.noticeInfo.forEach(text => msgList.push({
         speaker: 'server',

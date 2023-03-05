@@ -1,6 +1,9 @@
 var config = {
     normalTitle: '聊天室标题',
     responseIngTitle: '对方正在输入中...',
+    systemInfo: [
+        '我的名字是xxx',
+    ],
     noticeInfo: [
         '你好，输入消息与我对话',
     ],
